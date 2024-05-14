@@ -27,3 +27,9 @@ module "vpc" {
   }
 
 }
+output "public-subnets" {
+  value = module.vpc.public_subnets
+}
+output "public-subnets" {
+  value = module.vpc.private_subnets
+}
